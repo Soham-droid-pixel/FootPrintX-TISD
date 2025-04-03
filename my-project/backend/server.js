@@ -4,7 +4,7 @@ const http = require("http");
 const { Server } = require("socket.io");
 const dotenv = require("dotenv");
 const connectDB = require("./config/database");
-import axios from "axios";
+
 dotenv.config();
 const app = express();
 const server = http.createServer(app);
