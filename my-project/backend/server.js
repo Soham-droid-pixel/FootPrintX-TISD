@@ -37,12 +37,10 @@ io.on("connection", (socket) => {
 // ✅ Import routes (Pass `io` directly where needed)
 const userRoutes = require("./routes/userRoutes");
 const productRoutes = require("./routes/productRoutes");
-const claimRoutes = require("./routes/claimRoutes")(io); // Pass `io` only once
 
 // ✅ Use Routes
 app.use("/api/users", userRoutes);
 app.use("/api/products", productRoutes);
-app.use("/api/claim", claimRoutes);
 
 // ✅ Start Server
 const PORT = process.env.PORT || 5000;

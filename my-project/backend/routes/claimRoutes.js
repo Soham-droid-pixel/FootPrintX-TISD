@@ -1,4 +1,4 @@
-const express = require("express");
+/*const express = require("express");
 const router = express.Router();
 const Claim = require("../models/Claim");
 const Product = require("../models/Product");
@@ -29,3 +29,4 @@ module.exports = (io) => {
 
     return router;
 };
+*/
